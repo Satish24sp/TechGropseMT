@@ -1,0 +1,6 @@
+framework module Pods_TechGropseMT {
+  umbrella header "Pods-TechGropseMT-umbrella.h"
+
+  export *
+  module * { export * }
+}
