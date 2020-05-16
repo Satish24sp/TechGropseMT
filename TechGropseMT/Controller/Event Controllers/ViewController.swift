@@ -184,7 +184,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.tag == 1 {
-            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "organizerCollectionViewCell", for: indexPath) as! EventDetailOverviewCollectionViewCell
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.organizerCollectionViewCell, for: indexPath) as! EventDetailOverviewCollectionViewCell
             cell.cardView.setBorder(color: UIColor.lightGray, width: 1.0, radius: 3.0)
             cell.nameLabel.text = eventDetailData.organisers[indexPath.row].name
             if let imageUrlStr = eventDetailData.organisers[indexPath.row].image {
@@ -193,7 +193,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
             cell.profileImageView.setCircleCorner()
             return cell
         } else if collectionView.tag == 2 {
-            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "sponsersCollectionViewCell", for: indexPath) as! EventDetailOverviewCollectionViewCell
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.sponsersCollectionViewCell, for: indexPath) as! EventDetailOverviewCollectionViewCell
             cell.cardView.setBorder(color: UIColor.lightGray, width: 1.0, radius: 3.0)
             cell.nameLabel.text = eventDetailData.sponsors[indexPath.row].name
             if let imageUrlStr = eventDetailData.sponsors[indexPath.row].image {
@@ -202,7 +202,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
             cell.profileImageView.setCircleCorner()
             return cell
         } else if collectionView.tag == 3 {
-            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "performersCollectionViewCell", for: indexPath) as! EventDetailOverviewCollectionViewCell
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.performersCollectionViewCell, for: indexPath) as! EventDetailOverviewCollectionViewCell
             cell.cardView.setBorder(color: UIColor.lightGray, width: 1.0, radius: 3.0)
             cell.nameLabel.text = eventDetailData.performers[indexPath.row].name
             if let imageUrlStr = eventDetailData.performers[indexPath.row].image {
@@ -211,14 +211,14 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
             cell.profileImageView.setCircleCorner()
             return cell
         } else if collectionView.tag == 4 {
-            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "seatingCollectionViewCell", for: indexPath) as! EventDetailSliderCollectionViewCell
+            let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.seatingCollectionViewCell, for: indexPath) as! EventDetailSliderCollectionViewCell
             cell.mainImageView.setBorder(color: UIColor.lightGray, width: 1.0, radius: 3.0)
             if let imageUrl = eventDetailData.seatingPlanImages[indexPath.row].imageUrl {
                 cell.mainImageView.imageFromServerURL(imageUrl, placeHolder: nil)
             }
             return cell
         } else {
-            let cell =  self.sliderCollectionView.dequeueReusableCell(withReuseIdentifier: "EventDetailSliderCollectionViewCell", for: indexPath) as! EventDetailSliderCollectionViewCell
+            let cell =  self.sliderCollectionView.dequeueReusableCell(withReuseIdentifier: Identifiers.eventDetailSliderCollectionViewCell, for: indexPath) as! EventDetailSliderCollectionViewCell
             if let url = URL(string: self.eventDetailData.image[indexPath.row].imageUrl!){
                 cell.mainImageView.kf.setImage(with: url)
             }
@@ -279,7 +279,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch self.selectedInnerHeader {
         case .overview:
-            let cell =  mainTableView.dequeueReusableCell(withIdentifier: "EventDetailOverviewTableViewCell", for: indexPath) as! EventDetailOverviewTableViewCell
+            let cell =  mainTableView.dequeueReusableCell(withIdentifier: Identifiers.eventDetailOverviewTableViewCell, for: indexPath) as! EventDetailOverviewTableViewCell
             setOverviewServerData(on: cell)
             return cell
         default: return UITableViewCell()
@@ -310,7 +310,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let frame = CGRect(x: 0, y: 0, width: self.mainTableView.bounds.width, height: 50.0)
-        innerMenuHeader = EventDetailMenu.loadViewFromNib(nibNamed: "EventDetailMenu", frame: frame) as! EventDetailMenu
+        innerMenuHeader = EventDetailMenu.loadViewFromNib(nibNamed: Identifiers.eventDetailMenu, frame: frame) as! EventDetailMenu
         innerMenuHeader.delegate = self
         innerMenuHeader.selectedInnerHeader = self.selectedInnerHeader
         innerMenuHeader.updateHeader(by: self.selectedInnerHeader)

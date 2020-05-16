@@ -12,6 +12,7 @@
 		1E1CDC2C246F413000D70EF6 /* EventDetailOverviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CDC2B246F413000D70EF6 /* EventDetailOverviewCollectionViewCell.swift */; };
 		1E1CDC2E246F41A200D70EF6 /* EventDetailSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CDC2D246F41A200D70EF6 /* EventDetailSliderCollectionViewCell.swift */; };
 		1E1CDC30246F8D2C00D70EF6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CDC2F246F8D2C00D70EF6 /* ActivityIndicator.swift */; };
+		1E1CDC3B246F9F5000D70EF6 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CDC3A246F9F5000D70EF6 /* AlertController.swift */; };
 		1E39ADA6246EE65F008DB0D3 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39ADA5246EE65F008DB0D3 /* Enumerations.swift */; };
 		1E39ADAA246F15F3008DB0D3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39ADA9246F15F3008DB0D3 /* Extensions.swift */; };
 		1E39ADAE246F2300008DB0D3 /* EventDetailMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E39ADAD246F2300008DB0D3 /* EventDetailMenu.xib */; };
@@ -26,6 +27,7 @@
 		1ECCE628246DD17600D4F745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECCE626246DD17600D4F745 /* LaunchScreen.storyboard */; };
 		1ECCE633246DD17600D4F745 /* TechGropseMTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCE632246DD17600D4F745 /* TechGropseMTTests.swift */; };
 		1ECCE63E246DD17600D4F745 /* TechGropseMTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCE63D246DD17600D4F745 /* TechGropseMTUITests.swift */; };
+		1ED34AB3246FA4CD0086BCCA /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED34AB2246FA4CD0086BCCA /* Identifiers.swift */; };
 		99A9E9390BD677FD0D8466EB /* Pods_TechGropseMTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997DBD8F6CB6726360F77291 /* Pods_TechGropseMTTests.framework */; };
 		E60B92798A642B29A1F496F0 /* Pods_TechGropseMT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F228AA90DBECA52A1AEDE3A /* Pods_TechGropseMT.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,7 @@
 		1E1CDC2B246F413000D70EF6 /* EventDetailOverviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailOverviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E1CDC2D246F41A200D70EF6 /* EventDetailSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E1CDC2F246F8D2C00D70EF6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		1E1CDC3A246F9F5000D70EF6 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		1E39ADA5246EE65F008DB0D3 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		1E39ADA9246F15F3008DB0D3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1E39ADAD246F2300008DB0D3 /* EventDetailMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailMenu.xib; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		1ECCE639246DD17600D4F745 /* TechGropseMTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechGropseMTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECCE63D246DD17600D4F745 /* TechGropseMTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechGropseMTUITests.swift; sourceTree = "<group>"; };
 		1ECCE63F246DD17600D4F745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED34AB2246FA4CD0086BCCA /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		2F228AA90DBECA52A1AEDE3A /* Pods_TechGropseMT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechGropseMT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4941A4C19E90F4592BB8FDDB /* Pods-TechGropseMTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechGropseMTUITests.release.xcconfig"; path = "Target Support Files/Pods-TechGropseMTUITests/Pods-TechGropseMTUITests.release.xcconfig"; sourceTree = "<group>"; };
 		856F707C9316919D35681CC5 /* Pods-TechGropseMTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechGropseMTTests.debug.xcconfig"; path = "Target Support Files/Pods-TechGropseMTTests/Pods-TechGropseMTTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				1E39ADA5246EE65F008DB0D3 /* Enumerations.swift */,
 				1E39ADA9246F15F3008DB0D3 /* Extensions.swift */,
 				1E1CDC2F246F8D2C00D70EF6 /* ActivityIndicator.swift */,
+				1E1CDC3A246F9F5000D70EF6 /* AlertController.swift */,
+				1ED34AB2246FA4CD0086BCCA /* Identifiers.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -484,9 +490,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1CDC3B246F9F5000D70EF6 /* AlertController.swift in Sources */,
 				1E39ADB0246F2308008DB0D3 /* EventDetailMenu.swift in Sources */,
 				1E1CDC2C246F413000D70EF6 /* EventDetailOverviewCollectionViewCell.swift in Sources */,
 				1ECCE620246DD17400D4F745 /* ViewController.swift in Sources */,
+				1ED34AB3246FA4CD0086BCCA /* Identifiers.swift in Sources */,
 				1E39ADB2246F2E8C008DB0D3 /* EventDetailModel.swift in Sources */,
 				1E1CDC30246F8D2C00D70EF6 /* ActivityIndicator.swift in Sources */,
 				1ECCE61C246DD17400D4F745 /* AppDelegate.swift in Sources */,

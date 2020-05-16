@@ -11,12 +11,7 @@ import UIKit
 
 class EventDetailModel{
 
-    var isFav : Bool = false
     var isPaid :Int = 0
-    var isAttending : Bool = false
-    var isNew : Bool = false
-    var isFeatured : Bool = false
-
     var image = [imageModel]()
 
     var eventView : String?
@@ -39,9 +34,9 @@ class EventDetailModel{
     var eventAge : String?
 
     var eventTag = [EventTagModel]()
-    var organisers = [OSPModel]()
-    var sponsors = [OSPModel]()
-    var performers = [OSPModel]()
+    var organisers = [EventOverviewDetailsModel]()
+    var sponsors = [EventOverviewDetailsModel]()
+    var performers = [EventOverviewDetailsModel]()
     var seatingPlanImages = [imageModel]()
 
     var importantNote: String?
@@ -68,14 +63,11 @@ class EventDetailModel{
 
 }
 
-
-
 struct imageModel {
 
     var imageUrl : String?
 
 }
-
 
 struct EventTagModel {
 
@@ -91,7 +83,7 @@ struct EventTagModel {
 }
 
 
-struct OSPModel {
+struct EventOverviewDetailsModel {
 
     var id : String?
     var image: String?

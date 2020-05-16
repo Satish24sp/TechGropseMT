@@ -50,9 +50,9 @@ class EventDetailModelClass{
             }
         }
         if let eventOragniserList = object["event_organizer"] as? [[String:Any]] {
-            var tempArr = [OSPModel]()
+            var tempArr = [EventOverviewDetailsModel]()
             for object in eventOragniserList {
-                var model = OSPModel()
+                var model = EventOverviewDetailsModel()
                 model.id = "\(object["organizer_id"]!)"
                 model.name = object["o_name"] as? String ?? ""
                 model.nameAr = object["o_name_ar"] as? String ?? ""
@@ -66,9 +66,9 @@ class EventDetailModelClass{
             modelData.organisers = tempArr
         }
         if let eventSponsorList = object["event_sponser"] as? [[String:Any]] {
-            var tempArr = [OSPModel]()
+            var tempArr = [EventOverviewDetailsModel]()
             for object in eventSponsorList {
-                var model = OSPModel()
+                var model = EventOverviewDetailsModel()
                 model.id = "\(object["sponsor_id"]!)"
                 model.name = object["s_name"] as? String ?? ""
                 model.nameAr = object["s_name_ar"] as? String ?? ""
@@ -82,9 +82,9 @@ class EventDetailModelClass{
             modelData.sponsors = tempArr
         }
         if let eventPerformerList = object["event_performer"] as? [[String:Any]] {
-            var tempArr = [OSPModel]()
+            var tempArr = [EventOverviewDetailsModel]()
             for object in eventPerformerList {
-                var model = OSPModel()
+                var model = EventOverviewDetailsModel()
                 model.id = "\(object["performer_id"]!)"
                 model.name = object["p_name"] as? String ?? ""
                 model.nameAr = object["p_name_ar"] as? String ?? ""
@@ -139,17 +139,11 @@ class EventDetailModelClass{
         modelData.venueGeoLocation = eventVenueName //"\(object["ev_city"] ?? "")" //Correct Later
 
         modelData.categoryName =  categoryName
-        modelData.isFav = isFav == "0" ? false : true
 
         modelData.latitude = "\(object["ev_lat"]!)"
         modelData.longitude = "\(object["ev_long"]!)"
 
         modelData.isPaid = Int(isPaid)!
-        if let attending = object["ev_is_reminder"] as? String {
-            modelData.isAttending = attending == "0" ? false : true
-        }
-        modelData.isNew = ("\(object["ev_new"] ?? "")" == "1") ? true : false
-        modelData.isFeatured = ("\(object["ev_featured"] ?? "")" == "1") ? true : false
 
         modelData.eventView = eventView
         modelData.eventLike =  eventLike

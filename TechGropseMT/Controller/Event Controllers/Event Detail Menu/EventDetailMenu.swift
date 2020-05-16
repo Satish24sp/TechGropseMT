@@ -37,7 +37,7 @@ class EventDetailMenu: UIView {
     }
 
     // MARK: - Button Actions
-    @IBAction func onClickOverviewHdrBtn(_ sender: Any) {
+    @IBAction func onClickOverviewButton(_ sender: Any) {
         self.delegate?.onChangeHeader(type: .overview)
     }
     
